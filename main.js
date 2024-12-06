@@ -294,12 +294,25 @@
 
 // Massivni ikkiga bo‘ling: birinchi va ikkinchi yarmalarini alohida massivlarga ajrating.
 
-// let arr = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+let arr = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
 
-// let arr2 = [];
-// let massiv = [];
+let arr2 = [];
+let massiv = [];
 
-// let arr3 = Math.floor(arr.length / 2);
+if (arr.length % 2 == 0){
+    for(let i = 0; i < arr.length; i++){
+        arr2.push(arr[i])
+    }
+
+    for(let i = arr.length/2; i < arr.length; i++){
+        massiv.push(arr[i])
+    }
+}
+
+console.log(arr2);
+console.log(massiv);
+
+
 
 // ===================
 
